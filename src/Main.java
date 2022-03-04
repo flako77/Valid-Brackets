@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        String s = "{}([)";
+        String s = "{}([])";
         if(Solution.isValid(s)){
             System.out.print("Valid");
         }else{
@@ -32,7 +32,6 @@ class Solution{
                 if(pairs.get(prev) == null)
                     return false;
                 if(pairs.get(prev) == s.charAt(i)){
-                    System.out.println(brackets);
                     brackets.pop();
                     continue;
                 }
