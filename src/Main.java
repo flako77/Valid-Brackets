@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        String s = "{}([])";
+        String s = "{}([]())";
         if(Solution.isValid(s)){
             System.out.print("Valid");
         }else{
